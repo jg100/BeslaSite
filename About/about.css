@@ -1,0 +1,91 @@
+html {
+font-family: Arial;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    border: solid;
+    border-color: black;
+    border-width: 15px;
+}
+
+.firstBody {
+    margin:0;
+    background-image: url(lincoln-continental-commercial.jpg);
+    height: 100%;
+
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.firstBody img {
+    width: 900px;
+    height: 450px;
+
+   
+}
+
+.pageImg:hover {
+    border: solid;
+    border-width: 30px;
+    border-color: yellow;
+}
+
+#title {
+    background-color: whitesmoke;
+    width: fit-content;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.aboutPic {
+    background-color: whitesmoke;
+    padding: 20px;
+    width: fit-content;
+
+}
+
+
+
+.secondBody {
+    background-image: url(grand-canyon-slide.jpg);
+    height: 100%;
+
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.secondBody img {
+    width: 900px;
+    height: 450px;
+}
+
+.thirdBody{
+background-image: url(mcconaughey-icefishing-commercial-blog-862x451.png);
+height: 100%;
+
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.thirdBody img {
+    width: 900px;
+    height: 450px;
+}
+
+
+
+
+
