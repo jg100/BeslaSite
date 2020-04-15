@@ -132,3 +132,31 @@ body {
   background-color: antiquewhite;
   color: blue;
 }
+
+
+
+/*Store*/
+
+#storeBody{
+    background-color: white;
+}
+
+.shopImages:hover{
+
+}
+
+.shopImages img{
+    border: solid;
+    border-color: #333;
+}
+
+.shopImages img:hover{
+    border-color:aquamarine;
+
+}
+
+#shopFooter{
+    padding: 20px;
+    background-color: #333;
+    color: #333;
+}
