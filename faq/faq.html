@@ -1,76 +1,56 @@
- <html>
+<html>
 <head>
     <title> FAQ </title>
-     
-     
-     </head>
-  <nav>
-                <center>
-                     <center> <h1> FAQ </h1> </center> 
-                <table>
-                   
-                    <tr>
-                        <td> <a href="../home.html"> Home |</a> </td>
-                        <td>  <a href="../About/about.html">   About  </a> </td>
-                        <td> <a href="../faq/faq.html"> | FAQ |  </a> </td>
-                        
-                        <td> <a href="../Store/store.html">  Shop  </a>
-                            </td>
-                    </tr>  
-                </table>
-                </center>
-                
-            </nav>
-     <center>
-         <header>
-             <img src="faq.jpg" alt="img not found" border=6>
-         </header>
-  
-         
-         
-         
-     </center>
-     <body>
-         <br>
-         <br>
-         <ul> 
-             
-             <li>Is Besla a legitmate company? 
-             
-                 <br> The answer to that question is very complicated. But the simple asnwer is no. </li>
-             <br>
-             <li> When can I expect my car to arrive?
-             <br> When we tell you it will. Relax. </li>
-             <br>
-             <li> What is your return policy? 
-             <br> Simple. You buy. You pay. You keep. No returns </li>
-             <br>
-             <li>Wher can I service my car
-             <br> Where they service cars. </li>
-             
-            
-             
-         
-         
-         </ul>
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-     
-     </body>
+    <header>
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="faq.css">
+    </header>
+    <nav> 
+        <div class="navBar">
+            <a href="../home.html" class="navBar"> Home </a> 
+            <a href="about.html" class="navBar">   About  </a> 
+            <a href="../faq/faq.html" class="navBar"> FAQ </a>       
+            <a href="../Store/store.html" class="navBar">  Shop  </a>
+        </div>
+    </nav>
+</head>
+<body id="faqBody">
+    <center><img src="faq.jpg" alt="img not found" border=6></center>
+    <br>
+    <br>
+    <ol> 
+        <li>
+            <b>Is Besla a legitmate company?</b>
+            <br> 
+            The answer to that question is very complicated. But the simple answer is no.
+        </li>
+        <br>
+        <li>
+            <b>When can I expect my car to arrive?</b>
+            <br>
+            When we tell you it will. Relax.
+        </li>
+        <br>
+        <li>
+            <b>What is your return policy?</b>
+            <br>
+            Simple. You buy. You pay. You keep. No returns
+        </li>
+        <br>
+        <li>
+            <b>Where can I service my car?</b>
+            <br>
+            Where they service cars.
+        </li>
+    </ol>
+    <br>
+    <br>
+    <form class="ask">
+        <fieldset id="askField">
+            <legend><b>Have a question that isn't listed? Ask!</b></legend>
+            <textarea type="text" placeholder="Enter your question here!"></textarea>
+        </fieldset>
+        <button onclick="faq.html">Ask</button>
+    </form>
+</body>
 </html>
