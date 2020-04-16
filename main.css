@@ -11,6 +11,51 @@ body {
 
 }
 
+footer {
+    margin: 0;
+    background-color: #333;
+    padding: 30px;
+} 
+
+
+.contactForm {
+   color: white;
+   width:fit-content;
+   
+    
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+
+.contactInfoFields button {
+    background-color: teal;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.contactInfoField button:hover {
+    background-color: gold;
+    padding: 10px;
+    border-radius: 10px;
+    color: royalblue;
+}
+
+
+
+
+
 
 
 #firstThird {
@@ -28,7 +73,9 @@ body {
   vertical-align: middle;
 
 
+/* 
 
+*/
 
 }
 
