@@ -2,47 +2,48 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Vehicle 1</title>  
+        <title>Besla Classic</title> 
         <header>
-                
-                
-            </header>
-         <nav>
-             <center> <h1> Vehicle 2 </h1> </center> 
-                <center>
-                    
-                <table>
-                   
-                    <tr>
-                        <td> <a href="home.html"> Home |</a> </td>
-                        <td>  <a href="about.html">   About  </a> </td>
-                        <td> <a href="faq.html"> | FAQ |  </a> </td>
-                        
-                        <td> <a href="store.html">  Shop  </a>
-                            </td>
-                    </tr>  
-                </table>
-                </center>
-                
-            </nav>
+                <link rel="stylesheet" href="../../main.css">
+                <link rel="stylesheet" href="../store.css">
+        </header>
+        <nav>
+            <div class="navBar">
+                <a href="../../home.html" class="navBar"> Home </a> 
+                <a href="../../About/about.html" class="navBar">About</a> 
+                <a href="../../faq/faq.html" class="navBar"> FAQ </a>
+                <a href="../store.html" class="navBar"> Shop </a>
+            </div>                
+        </nav>
     </head>
-    <body>
-        <img src="car2.jpg" alt="Image not found.">
-        <br />
+    <body class="vehiclePage">
+        <center><h1>CLASSIC</h1></center>
+        <center><img src="car2.jpg" alt="Image not found."></center>
+        <br/>
+        <center>
         <form>
-            <fieldset>
-                <legend>Stats</legend>
+            <fieldset class="infoField">
+                <legend>Info</legend>
                 <table>
-                    <label for="year"> Year: 1925</label>
-                    <br />
-                    <label for="make"> Make: Ford</label>
-                    <br />
-                    <label for="model">Model: T</label>
-                    <br />
-                    <label for="mpg">  MPG: 13 City/21 Highway</label>
+                    <label for="year"> Year: 1774</label>
+                    <br>
+                    <label for="make"> Make: Besla</label>
+                    <br>
+                    <label for="model"> Model: Classic</label>
+                    <br>
+                    <label for="mpg">  MPG: 10 City/15 Highway </label>
+                    <br>
+                    <label for="price"> Price: $40,000 </label>
                 </table>
             </fieldset>
-        </form>
-        <button = "button" onclick="location.href='Checkout/checkOut.html'" > BUY NOW! </button>
+            <fieldset class="infoField">
+                <legend>Description</legend>
+                <p>The Besla Classic the the car you want if your looking to relive the glory days of the 1770's. This is the first car ever created by Besla and we've remade it so that you all can relive the nostalgia of the revolutionary war together. It's made exactly the same way it was before except this time it has a personal assistant AI named Jeeves who will make sarastic remarks at your requests.</p>
+            </fieldset>
+        
+            <button type="button" onclick="location.href='Checkout/checkOut.html'"> BUY NOW! </button>
+    </form>
     </body>
+                                     
+                                     
 </html>
