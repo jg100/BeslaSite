@@ -23,3 +23,25 @@
     background-color: #333;
     color: #333;
 }
+
+
+/* Vehicle Pages */
+.vehiclePage{
+    background-image: radial-gradient(lightgray,#333);
+    size: 100%;
+}
+.vehiclePage button{
+    width: 90px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    font-size: 15pt;
+}
+.infoField{
+    background-color: black;
+    color: white;
+    width: 50%;
+}
+.infoField legend{
+    background-color: black;
+}
