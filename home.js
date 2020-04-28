@@ -11,18 +11,12 @@ function delayFormSubmission() {
 }
 
 function formSubmited() {
-    //alert("Didn't work");
-    document.getElementById("thankYou").innerHTML = "Thank you! Your response is being recorded!";
-    delayFormSubmission();  
+    alert("Your response was recorded! Thank you!")
+   // document.getElementById("thankYou").innerHTML = "Thank you! Your response is being recorded!";
+   submitForm();
 }
 
 //***** */
 
-function serverTest {
-    var xml = new XMLHttpRequest();
 
-    
-
-
-}
 

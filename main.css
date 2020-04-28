@@ -180,3 +180,16 @@ input[type=text], input[type=email] {
   background-color: antiquewhite;
   color: blue;
 }
+
+#formButton {
+   padding: 15px 70px;
+   background-color: lightblue;
+}
+
+#formButton :hover {
+    opacity: 0.2;
+}
+
+#formButton :active {
+    background-color: gold;
+}
