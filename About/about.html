@@ -5,6 +5,7 @@
                <title> About Us </title> 
                <link rel="stylesheet" href="../main.css">
                <link rel="stylesheet" href="about.css">
+               <script src="about.js"></script>
                
             </header>
     
@@ -24,47 +25,28 @@
     
     
     <body> 
-       <div class = "firstBody">
-           <br>
-
         <center>
-       <h1 id="title"> <i>BESLA: A TRADITION OF INNOVATION </i> </h1>
-        <img  class="pageImg"  src="teslaFactory.png" alt="Img Not Found">
-       
+        <h1 id="title"> BESLA AND OUR HISTORY.</h1>
+        <h4 id="subTitle"> From our humble beginings in 1885. To our future. </h4>
     </center>
+         <img class="slides" src="factory2.jpg">
+          <img class="slides" src="factory1.jpg">
+          <img class="slides" src="teslaFactory.png">
+
+          <button class="prev" onclick="nextSlide(-1)">&#10094;</button>
+          <button class="next" onclick="nextSlide(+1)">&#10095;</button>
 
 
-
-        </div>
-
-        <div class = "secondBody">
-            <br>
-            <center>
-                <h3> Our first factory opened in 1773 </h3>
-
-            <img class="pageImg" src="factory2.jpg" alt="Img Not Found">
-
-            <p class="aboutPic"> Our first factory and only was opened in 1773 and we paved the way for posers such as Henry Ford.</p> <center>
-
-            </div>
-
-
-        <div class = "thirdBody">
-            <br>
-            <center>
-                <h3> Out factories today  </h3>
-
-            <img class="pageImg" src="factory1.jpg" alt="Img Not Found">
-
-            <p class="aboutPic"> Today our factories are equipt with the most cutting edge technology.</p> <center>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+        </script>
+    
 
 
 
 
-            </div>
-
-
-        
+       </body>
     
 
 </html>

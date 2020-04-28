@@ -1,3 +1,17 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+
+.slides {
+    vertical-align: middle;
+    
+    width: 100%;
+
+
+
+
+}
+
 html {
 font-family: Arial;
 }
@@ -6,86 +20,75 @@ body {
     margin: 0;
 }
 
-img {
+
+.slideShowContainer {
+    max-width: 1000px;
+    position: relative;
+    margin:auto;
+}
+
+.slideShow {
+    display: none; 
+}
+
+html {
+    background-color: black;
+}
+#title, #subTitle {
+    color: white;
+}
+
+
+/* 
+Styling for the next and previous buttons.
+*/
+.prev, .next {
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 40px;
+    margin-top: -22px;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+
+
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
     border: solid;
     border-color: black;
-    border-width: 15px;
-}
-
-.firstBody {
-    margin:0;
-    background-image: url(lincoln-continental-commercial.jpg);
-    height: 100%;
-
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.firstBody img {
-    width: 900px;
-    height: 450px;
-
-   
-}
-
-.pageImg:hover {
-    border: solid;
-    border-width: 30px;
-    border-color: yellow;
-}
-
-#title {
-    background-color: whitesmoke;
-    width: fit-content;
-    padding: 10px;
-    margin-top: 40px;
-}
-
-.aboutPic {
-    background-color: whitesmoke;
-    padding: 20px;
-    width: fit-content;
-
-}
-
-
-
-.secondBody {
-    background-image: url(grand-canyon-slide.jpg);
-    height: 100%;
-
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    -webkit-user-select: none;
 
 
 }
 
-.secondBody img {
-    width: 900px;
-    height: 450px;
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px; 
 }
 
-.thirdBody{
-background-image: url(mcconaughey-icefishing-commercial-blog-862x451.png);
-height: 100%;
-
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+.prev:hover, .next:hover {
+    background-color: black;
 }
 
-.thirdBody img {
-    width: 900px;
-    height: 450px;
-}
+/* Fading Animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
 
+  @-webkit-keyframes fade {
+    from {opacity: .4;}
+    to{opacity: 1;};
 
+  }
 
-
+  @keyframes fade {
+    from {opacity: .4;}
+    to{opacity: 1;};
+  }
 
