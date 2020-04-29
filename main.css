@@ -166,7 +166,7 @@ input[type=text], input[type=email] {
 .navBar a {
     
     align-content: center;
-    padding: 15px;
+    padding: 20px;
 
 }
 
@@ -193,3 +193,4 @@ input[type=text], input[type=email] {
 #formButton :active {
     background-color: gold;
 }
+

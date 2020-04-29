@@ -4,6 +4,7 @@
     <header>
         <link rel="stylesheet" href="../main.css">
         <link rel="stylesheet" href="faq.css">
+        <script src="faq.js"> </script>
     </header>
     <nav> 
         <div class="navBar">
@@ -15,36 +16,28 @@
     </nav>
 </head>
 <body id="faqBody">
-    <center><img src="faq.jpg" alt="img not found" border=6></center>
-    <br>
-    <br>
-    <ol> 
-        <li>
-            <b>Is Besla a legitmate company?</b>
-            <br> 
-            The answer to that question is very complicated. But the simple answer is no.
-        </li>
-        <br>
-        <li>
-            <b>When can I expect my car to arrive?</b>
-            <br>
-            When we tell you it will. Relax.
-        </li>
-        <br>
-        <li>
-            <b>What is your return policy?</b>
-            <br>
-            Simple. You buy. You pay. You keep. No returns
-        </li>
-        <br>
-        <li>
-            <b>Where can I service my car?</b>
-            <br>
-            Where they service cars.
-        </li>
-    </ol>
-    <br>
-    <br>
+<center>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="SEARCH FOR QUESTION...">
+
+<ul id="myUL">
+  <li> <b> Who is Besla? </b> <br> We are us. ANd you are you. </li>
+  <li><b> When can I expect my order? </b><br> You'll get it when you get it.</li>
+
+  <li><b> Is this a real company? </b><br> Yes. But actually no. So yes.</li>
+  <li><b> Do you sell bikes? </b><br> Are you serious. </li>
+
+  <li><b> Can I pick my car up? </b><br> For an extra charge of 500$. Yes. You can.</li>
+  <li> <b> Are there shipping charges? </b><br> Yes. There are. We don't know what they are. But they exist</li>
+  <li> <b> Can I eat a potato in my car? </b> <br> No. Sorry. Strictly enforced. </li>
+  <li id="noResult"> </li>
+</ul>
+
+</center>
+   
+   
+   
+<br> <br> <br> <br> <br> <br> <br> 
+    <center>
     <form class="ask">
         <fieldset id="askField">
             <legend><b>Have a question that isn't listed? Ask!</b></legend>
@@ -52,5 +45,7 @@
         </fieldset>
         <button onclick="faq.html">Ask</button>
     </form>
+    
+    </center>
 </body>
 </html>

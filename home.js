@@ -11,10 +11,12 @@ function delayFormSubmission() {
 }
 
 function formSubmited() {
-    alert("Your response was recorded! Thank you!")
+    alert("CONFIRM FORM SUBMISSION")
    // document.getElementById("thankYou").innerHTML = "Thank you! Your response is being recorded!";
    submitForm();
 }
+
+
 
 //***** */
 
