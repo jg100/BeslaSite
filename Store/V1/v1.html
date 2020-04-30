@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -23,32 +23,59 @@
     <body class="vehiclePage">
 
         <center><h1>COMPENSATOR</h1></center>
-        <center><img src="car1.jpg" alt="Image not found."></center>
-        <br/>
-        <center>
-        <form>
-            <fieldset class="infoField">
-                <legend>Info</legend>
-                <table>
-                    <label for="year"> Year: 2016</label>
-                    <br>
-                    <label for="make"> Make: Besla</label>
-                    <br>
-                    <label for="model"> Model: Compensator</label>
-                    <br>
-                    <label for="mpg">  MPG: 25 City/35 Highway </label>
-                    <br>
-                    <label for="price"> Price: $35,000 </label>
-                </table>
-            </fieldset>
-            <fieldset class="infoField">
-                <legend>Description</legend>
-                <p>The Besla Compensator is a truck that tells everyone that your the biggest guy around and there's nothing that you're insecure about at all. It has a truck bed so you can put all your cool dirt bikes and ATVs on so that people know you do cool things. We can also add flames or stripes to it to up the coolness factor by a million.</p>
-            </fieldset>
 
-            <button type="button" onclick="location.href='Checkout/checkOut.html'"> BUY NOW! </button>
-    </form>
-    </body>
+        <center>
+            <button onclick="document.getElementById('myImage').src = 'car1.jpg'; document.getElementById('demo').innerHTML = 'BLACK'">Black</button>
+            <button onclick="document.getElementById('myImage').src='car1w.jpg'; document.getElementById('demo').innerHTML = 'WHITE'">White</button>
+        </center> <br />
+
+        <center><img id="myImage" src="car1.jpg" alt="Image not found."></center>
+
+        <center>
+            <p id="demo">BLACK</p>
+        </center>
+
+        <center>
+            <form>
+                <fieldset class="infoField">
+                    <legend>Info</legend>
+                    <table>
+                        <label for="year"> Year: 2016</label>
+                        <br>
+                        <label for="make"> Make: Besla</label>
+                        <br>
+                        <label for="model"> Model: Compensator</label>
+                        <br>
+                        <label for="mpg">  MPG: 25 City/35 Highway </label>
+                        <br>
+                        <label for="price"> Price: $35,000 </label>
+                    </table>
+                </fieldset>
+                <fieldset class="infoField">
+                    <legend>Description</legend>
+                    <p>The Besla Compensator is a truck that tells everyone that your the biggest guy around and there's nothing that you're insecure about at all. It has a truck bed so you can put all your cool dirt bikes and ATVs on so that people know you do cool things. We can also add flames or stripes to it to up the coolness factor by a million.</p>
+                </fieldset>
+
+                <button type="button" onclick="location.href='Checkout/checkOut.html'"> BUY NOW! </button>
+            </form>
+
+            <br />
+            <center>
+                <button onclick="playVid()" type="button">Play</button>
+                <button onclick="pauseVid()" type="button">Pause</button><br>
+            </center>
+            <br />
+            <center>
+                <video id="myVideo" width="320" height="176">
+                    <source src="car1.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </center>
+            <br />
+
+            <script src="../v.js"></script>
+
+</body>
 
 
 </html>
