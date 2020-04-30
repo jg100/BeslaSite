@@ -12,12 +12,31 @@ function myFunction() {
       txtValue = a.textContent || a.innerText;
       if (txtValue.toUpperCase().indexOf(filter) != -1) {
         li[i].style.display = "";
+        hideLastElement();
+
       } 
       
       else {
         li[i].style.display = "none";
-       
-
+        displayLastElement();
+        
       }
     }
   }
+
+  function hideLastElement() {
+    var ul = document.getElementById("myUL");
+    var li = ul.getElementsByTagName("li");
+    var last = li[li.length-1];
+    last.style.display = "none";
+
+  }
+
+  function displayLastElement() {
+    var ul = document.getElementById("myUL");
+    var li = ul.getElementsByTagName("li");
+    var last = li[li.length-1];
+    last.style.display = "";
+
+  }
+  

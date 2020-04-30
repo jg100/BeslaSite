@@ -16,11 +16,13 @@
     </nav>
 </head>
 <body id="faqBody">
-<center>
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="SEARCH FOR QUESTION...">
 
-<ul id="myUL">
-  <li> <b> Who is Besla? </b> <br> We are us. ANd you are you. </li>
+   <center> <h1> FAQ PAGE </h1> 
+
+<input type="text" id="myInput" onkeyup="myFunction()" onload="questionNotFound()" placeholder="SEARCH FOR QUESTION...">
+
+<ul id="myUL" >
+  <li> <b> Who is Besla? </b> <br> We are us. And you are you. </li>
   <li><b> When can I expect my order? </b><br> You'll get it when you get it.</li>
 
   <li><b> Is this a real company? </b><br> Yes. But actually no. So yes.</li>
@@ -29,10 +31,13 @@
   <li><b> Can I pick my car up? </b><br> For an extra charge of 500$. Yes. You can.</li>
   <li> <b> Are there shipping charges? </b><br> Yes. There are. We don't know what they are. But they exist</li>
   <li> <b> Can I eat a potato in my car? </b> <br> No. Sorry. Strictly enforced. </li>
-  <li id="noResult"> </li>
+   <li id="qNotFound"> <b> Can't find your  question? Ask us! <b></b> </li>
 </ul>
-
 </center>
+<script>
+hideLastElement();
+</script>
+
    
    
    
