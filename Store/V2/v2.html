@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -18,32 +18,59 @@
     </head>
     <body class="vehiclePage">
         <center><h1>CLASSIC</h1></center>
-        <center><img src="car2.jpg" alt="Image not found."></center>
-        <br/>
+
         <center>
-        <form>
-            <fieldset class="infoField">
-                <legend>Info</legend>
-                <table>
-                    <label for="year"> Year: 1774</label>
-                    <br>
-                    <label for="make"> Make: Besla</label>
-                    <br>
-                    <label for="model"> Model: Classic</label>
-                    <br>
-                    <label for="mpg">  MPG: 10 City/15 Highway </label>
-                    <br>
-                    <label for="price"> Price: $40,000 </label>
-                </table>
-            </fieldset>
-            <fieldset class="infoField">
-                <legend>Description</legend>
-                <p>The Besla Classic the the car you want if your looking to relive the glory days of the 1770's. This is the first car ever created by Besla and we've remade it so that you all can relive the nostalgia of the revolutionary war together. It's made exactly the same way it was before except this time it has a personal assistant AI named Jeeves who will make sarastic remarks at your requests.</p>
-            </fieldset>
-        
-            <button type="button" onclick="location.href='Checkout/checkOut.html'"> BUY NOW! </button>
-    </form>
-    </body>
+            <button onclick="document.getElementById('myImage').src='car2.jpg'; document.getElementById('demo').innerHTML = 'BLACK'">Black</button>
+            <button onclick="document.getElementById('myImage').src='car2b.jpg'; document.getElementById('demo').innerHTML = 'BLACKER'">Blacker</button>
+        </center> <br />
+
+        <center><img id="myImage" src="car2.jpg" alt="Image not found."></center>
+
+        <center>
+            <p id="demo">BLACK</p>
+        </center>
+
+        <center>
+            <form>
+                <fieldset class="infoField">
+                    <legend>Info</legend>
+                    <table>
+                        <label for="year"> Year: 1774</label>
+                        <br>
+                        <label for="make"> Make: Besla</label>
+                        <br>
+                        <label for="model"> Model: Classic</label>
+                        <br>
+                        <label for="mpg">  MPG: 10 City/15 Highway </label>
+                        <br>
+                        <label for="price"> Price: $40,000 </label>
+                    </table>
+                </fieldset>
+                <fieldset class="infoField">
+                    <legend>Description</legend>
+                    <p>The Besla Classic the the car you want if your looking to relive the glory days of the 1770's. This is the first car ever created by Besla and we've remade it so that you all can relive the nostalgia of the revolutionary war together. It's made exactly the same way it was before except this time it has a personal assistant AI named Jeeves who will make sarastic remarks at your requests.</p>
+                </fieldset>
+
+                <button type="button" onclick="location.href='Checkout/checkOut.html'"> BUY NOW! </button>
+            </form>
+
+            <br />
+            <center>
+                <button onclick="playVid()" type="button">Play</button>
+                <button onclick="pauseVid()" type="button">Pause</button><br>
+            </center>
+            <br />
+            <center>
+                <video id="myVideo" width="320" height="176">
+                    <source src="car2.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </center>
+            <br />
+
+            <script src="../v.js"></script>
+
+</body>
                                      
                                      
 </html>
