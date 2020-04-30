@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -18,32 +18,62 @@
     </head>
     <body class="vehiclePage">
         <center><h1>HOVER</h1></center>
-        <center><img src="car3.jpg" alt="Image not found."></center>
-        <br/>
+
         <center>
-        <form>
-            <fieldset class="infoField">
-                <legend>Info</legend>
-                <table>
-                    <label for="year"> Year: 2120</label>
-                    <br>
-                    <label for="make"> Make: Besla</label>
-                    <br>
-                    <label for="model"> Model: Hover</label>
-                    <br>
-                    <label for="mpg">  MPG: 20 City/30 Highway </label>
-                    <br>
-                    <label for="price"> Price: $120,000 </label>
-                </table>
-            </fieldset>
-            <fieldset class="infoField">
-                <legend>Description</legend>
-                <p>The Besla Hover is our brand new car from the future. Its designs were sent back by our engineers from future Besla so that we'd be the first to offer this ever. Its sleek and simple design is so arodynamic there is virtually no drag. It also doesn't have wheels so you don't have to worry about flat tires and replacing them. You'll also notice that it has no fuel tank, this is because its solar powered. These solar panels are so advanced that they get enough energy to power the car for a week with only an hour of exposure to the sun.</p>
-            </fieldset>
+            <button onclick="document.getElementById('myImage').src = 'car3.jpg'; document.getElementById('demo').innerHTML = 'BLACK'">Black</button>
+            <button onclick="document.getElementById('myImage').src='car3b.jpg'; document.getElementById('demo').innerHTML = 'BLACKISH'">Blackish</button>
+        </center> <br />
+
+        <center><img id="myImage" src="car3.jpg" alt="Image not found."></center>
         
-            <button type="button" onclick="location.href='Checkout/checkOut.html'"> BUY NOW! </button>
-    </form>
-    </body>
+        <center>
+            <p id="demo">BLACK</p>
+        </center>
+
+        <center>
+            <form>
+                <fieldset class="infoField">
+                    <legend>Info</legend>
+                    <table>
+                        <label for="year"> Year: 2120</label>
+                        <br>
+                        <label for="make"> Make: Besla</label>
+                        <br>
+                        <label for="model"> Model: Hover</label>
+                        <br>
+                        <label for="mpg">  MPG: 20 City/30 Highway </label>
+                        <br>
+                        <label for="price"> Price: $120,000 </label>
+                    </table>
+                </fieldset>
+                <fieldset class="infoField">
+                    <legend>Description</legend>
+                    <p>The Besla Hover is our brand new car from the future. Its designs were sent back by our engineers from future Besla so that we'd be the first to offer this ever. Its sleek and simple design is so arodynamic there is virtually no drag. It also doesn't have wheels so you don't have to worry about flat tires and replacing them. You'll also notice that it has no fuel tank, this is because its solar powered. These solar panels are so advanced that they get enough energy to power the car for a week with only an hour of exposure to the sun.</p>
+                </fieldset>
+
+                <button type="button" onclick="location.href='Checkout/checkOut.html'"> BUY NOW! </button>
+
+            </form>
+
+
+
+            <br />
+            <center>
+                <button onclick="playVid()" type="button">Play</button>
+                <button onclick="pauseVid()" type="button">Pause</button><br>
+            </center>
+            <br />
+            <center>
+                <video id="myVideo" width="320" height="176">
+                    <source src="car3.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </center>
+            <br />
+
+            <script src="../v.js"></script>
+
+</body>
                                      
                                      
 </html>
