@@ -28,7 +28,7 @@
 	<body id="bulk">
      
 	  <form>
-	  <table>
+	  <table id="dom stuff">
 		<!--
 	    <colgroup>
 		<col span="2"> Not sure what this block would be used for still experimenting
@@ -69,11 +69,9 @@
   		<input type="text" id="Zip Code" name="Zip Code" required placeholder="0000" pattern="[0-9]{5}"><br><br>
 		</p>
 			</td>
-	
 		</table>
-          <input type="button" onclick="location.href='checkOutDone.html'" value="Check Out!">
-  		
-         
+		<script src="../../checkOut.js"></script>
+		  <input type="button" id="button" onclick="location.href='checkOutDone.html', dataStorage();"   value="Check Out!">
 	  </form>
 	</body>
 </html>
