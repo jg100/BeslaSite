@@ -21,13 +21,13 @@
 
         <center>
             <button onclick="document.getElementById('myImage').src = 'car3.jpg'; document.getElementById('demo').innerHTML = 'BLACK'">Black</button>
-            <button onclick="document.getElementById('myImage').src='car3b.jpg'; document.getElementById('demo').innerHTML = 'BLACKISH'">Blackish</button>
+            <button onclick="document.getElementById('myImage').src = 'car3b.jpg'; document.getElementById('demo').innerHTML = 'BLACKISH'">Blackish</button>
         </center> <br />
 
         <center><img id="myImage" src="car3.jpg" alt="Image not found."></center>
         
         <center>
-            <p id="demo">BLACK</p>
+            <p id="demo" style="color:red">BLACK</p>
         </center>
 
         <center>
@@ -51,7 +51,14 @@
                     <p>The Besla Hover is our brand new car from the future. Its designs were sent back by our engineers from future Besla so that we'd be the first to offer this ever. Its sleek and simple design is so arodynamic there is virtually no drag. It also doesn't have wheels so you don't have to worry about flat tires and replacing them. You'll also notice that it has no fuel tank, this is because its solar powered. These solar panels are so advanced that they get enough energy to power the car for a week with only an hour of exposure to the sun.</p>
                 </fieldset>
 
-                <button type="button" onclick="location.href='Checkout/checkOut.html'"> BUY NOW! </button>
+                <button class="b1" type="button" onclick="location.href='Checkout/checkOut.html'"> BUY NOW! </button>
+
+                <style>
+                    .b1:hover {
+                        background-color: lawngreen;
+                        color: red;
+                    }
+                </style>
 
             </form>
 
