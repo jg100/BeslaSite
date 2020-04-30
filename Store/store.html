@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<header><link rel ="stylesheet" href="../main.css">
+<header>
+    <link rel ="stylesheet" href="../main.css">
     <link rel="stylesheet" href="store.css">
-    </header>
+    <script src="store.js"></script>
+</header>
 	<head>
 		<meta charset="utf-8">
 		<title>Besla Shop</title>
@@ -20,38 +22,48 @@
         <center><h1>BESLA SHOP</h1></center>
 	</head>
 	<body id="storeBody">
+        <center>
+        <div id="filters">
+            <h3>Filters</h3>
+            <input type="button" id="none" value="None" checked onclick="none()">
+            <input type="button" id="atv" value="All Terrain Vehicles" onclick="atv()">
+            <input type="button" id="fcv" value="Flight Capable Vehicles" onclick="fcv()">
+            <input type="button" id="fev" value="Fuel Efficient Vehicles" onclick="fev()">
+            <input type="button" id="hcc" value="High Cargo Capacity" onclick="hcc()">
+        </div>
+        </center>
 		
         <center><table>
 			<tr>
-                <td class="shopImages">
+                <td class="shopImages" id="v1" >
                     <a href = "V1/v1.html"><img src="V1/car1.jpg" width=300 alt="image not found"></a>
                 </td>
-				<td class="shopImages">
+				<td class="shopImages" id="v2">
                     <a href="V2/v2.html"><img src="V2/car2.jpg" width=300 alt="image not found"></a>
 				</td>
-                <td class="shopImages">
+                <td class="shopImages" id="v3">
                     <a href="V3/v3.html"><img src="V3/car3.jpg" width = 300 alt="image not found"></a>
                 </td>
 			</tr>
 			<tr>
-				<td class="shopImages">
+				<td class="shopImages" id="v4">
                     <a href = "V4/v4.html"><img src="V4/car4.jpg" width=300 alt="image not found"></a>
                 </td>
-				<td class="shopImages">
+				<td class="shopImages" id="v5">
 				    <a href = "V5/v5.html"><img src="V5/car5.jpg" width=300 alt="image not found"></a>
 				</td>
-                <td class="shopImages">
+                <td class="shopImages" id="v6">
                     <a href = "V6/v6.html"><img src="V6/car6.jpg" width=300 alt="image not found"></a>
                 </td>
 			</tr>
 			<tr>
-                <td class="shopImages">
+                <td class="shopImages" id="v7">
                     <a href = "V7/v7.html"><img src="V7/car7.jpg" width=300 alt="image not found"></a>
                 </td>
-                <td class="shopImages">
+                <td class="shopImages" id="v8">
                     <a href = "V8/v8.html"><img src="V8/car8.jpg" width=300 alt="image not found"></a>
                 </td>
-                <td class="shopImages">
+                <td class="shopImages" id="v9">
                     <a href = "V9/v9.html"><img src="V9/car9.jpg" width=300 alt="image not found"></a>
                 </td>
             </tr>
