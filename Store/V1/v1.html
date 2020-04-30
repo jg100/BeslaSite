@@ -61,8 +61,8 @@
 
             <br />
             <center>
-                <button onclick="playVid()" type="button">Play</button>
-                <button onclick="pauseVid()" type="button">Pause</button><br>
+                <button onmouseover="mOverPlay(this)" onmouseout="mOutPlay(this)" onclick="playVid()" type="button">Play</button>
+                <button onmouseover="mOverPause(this)" onmouseout="mOutPause(this)" onclick="pauseVid()" type="button">Pause</button><br>
             </center>
             <br />
             <center>
@@ -74,6 +74,21 @@
             <br />
 
             <script src="../v.js"></script>
+
+            <script>
+                function mOverPlay(obj) {
+                    obj.innerHTML = "Besla"
+                    }
+                function mOutPlay(obj) {
+                    obj.innerHTML = "Play"
+                    }
+                function mOverPause(obj) {
+                    obj.innerHTML = "Besla"
+                    }
+                function mOutPause(obj) {
+                    obj.innerHTML = "Pause"
+                    }
+            </script>
 
 </body>
 
