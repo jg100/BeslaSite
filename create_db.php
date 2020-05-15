@@ -27,7 +27,7 @@ $tableName = homeForm;
 $formTableQuery = "CREATE TABLE IF NOT EXISTS homeForm(
 person_name VARCHAR(50) NOT NULL,
 person_email VARCHAR(50) NOT NULL,
-person_phone VARCHAR NOT NULL
+person_phone VARCHAR(50) NOT NULL
 )";
 
 if($conn->query($formTableQuery) == TRUE) {
