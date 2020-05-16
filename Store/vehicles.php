@@ -25,7 +25,7 @@ $sql = "CREATE TABLE vehicles (
   description TEXT not null
 )";
 
-if ($conn->querry($sql) === TRUE {
+if ($conn->querry($sql) === TRUE) {
   echo "Table vehicles created successfully.";
 } else {
   echo "Error creating table vehicles: " . $conn->error;
