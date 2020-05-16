@@ -43,12 +43,12 @@ hideLastElement();
    
 <br> <br> <br> <br> <br> <br> <br> 
     <center>
-    <form class="ask">
+    <form class="ask" action="addQuestion.php" method="POST">
         <fieldset id="askField">
             <legend><b>Have a question that isn't listed? Ask!</b></legend>
-            <textarea type="text" placeholder="Enter your question here!"></textarea>
+            <textarea id="qField" name="qField" type="text" placeholder="Enter your question here!"></textarea>
         </fieldset>
-        <button onclick="faq.html">Ask</button>
+        <button type = "submit">Ask</button>
     </form>
     
     </center>

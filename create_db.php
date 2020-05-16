@@ -37,5 +37,19 @@ else {
     echo "Error creating table: " . $conn->error; 
 }
 
+$questionFieldQuery = "CREATE TABLE IF NOT EXISTS faqForm(
+questionInput VARCHAR(500)
+)";
+
+$result = $conn->query($questionFieldQuery);
+if(!$result) {
+  die("Error: Table failes ".$conn->mysqli_errno() );
+}
+
+
+
+
+
+
 $conn->close();
 ?>

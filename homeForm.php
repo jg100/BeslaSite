@@ -6,6 +6,8 @@ $dbname = "beslaDB";
 
 $conn = new mysqli($servername,$username,$password,$dbname);
 
+
+
 $sql = "INSERT INTO homeForm(person_name,person_email,person_phone)
 VALUES('$_POST[name]','$_POST[email]','$_POST[phone]')";
 
