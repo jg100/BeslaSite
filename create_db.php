@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 //CREATE BESLA DATABASE 
 // Create database
 $sql = "CREATE DATABASE IF NOT EXISTS beslaDB";
-if ($conn->query($sql) === TRUE) {
+if ($conn->query($sql) == TRUE) {
   echo "Database created successfully!";
 } else {
   echo "Error creating database: " . $conn->error;
@@ -34,7 +34,9 @@ if($conn->query($formTableQuery) == TRUE) {
     echo "The table has been created";
 }
 else {
+
     echo "Error creating table: " . $conn->error; 
+    die();
 }
 
 $questionFieldQuery = "CREATE TABLE IF NOT EXISTS faqForm(
