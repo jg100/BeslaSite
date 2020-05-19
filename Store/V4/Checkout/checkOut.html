@@ -27,7 +27,7 @@
 
 	<body id="bulk">
      
-	  <form>
+	  <form id="myForm" action="../../checkOut.php" method= "POST">
 	  <table id="dom stuff">
 		<!--
 	    <colgroup>
@@ -70,8 +70,8 @@
 		</p>
 			</td>
 		</table>
-		<script src="../../checkOut.js"></script>
-		  <input type="button" id="button" onclick="location.href='checkOutDone.html', dataStorage();"   value="Check Out!">
+		<script src="../../../home.js"></script>
+		  <input type="button" id="button" onclick="location.href='checkOutDone.html', formSubmited();"   value="Check Out!">
 	  </form>
 	</body>
 </html>
