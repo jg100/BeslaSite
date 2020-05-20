@@ -9,8 +9,8 @@ $conn=new mysqli($servername,$username,$password,$dbname);
 $sql= "INSERT INTO
 checkOut(customer_fname,customer_lname, customer_cc,customer_email,customer_phone,customer_street,customer_city,
 customer_state,customer_country,customer_zip)
-VALUES('$_POST[fname]','$_POST[lname]','$_POST[Credit Card]','$_POST[Email]','$_POST[Phone number]','$_POST[Street Address]',
-'$_POST[City]','$_POST[State]','$_POST[Country]','$_POST[Zip Code]')";
+VALUES('$_POST[fname]','$_POST[lname]','$_POST[Credit]','$_POST[Email]','$_POST[Phone]','$_POST[Street]',
+'$_POST[City]','$_POST[State]','$_POST[Country]','$_POST[Zip]')";
 if($conn->query($sql) == TRUE) 
 {
   echo("One record added!");
